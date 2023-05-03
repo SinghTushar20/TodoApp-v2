@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+<h1><strong>Tasks</strong></h1>
+<h5> <strong> Namaskar 🙏🏻🙏🏻🙏🏻🙏 Mr.  <%= current_user.name%></strong></h5>
+<div id="tasks">
+  <% @tasks.each do |task| %>
+    <%if task.completed %>
+    <%else%>
+      <%= render task %>
+    <%end%>
+  <% end %>
+</div>
+<div id="tasks">
+  <% @tasks.each do |task| %>
+    <%if task.completed%>
+      <%= render task %>
+    <%end%>
+  <% end %>
+</div>
+<%= link_to "Add task", new_task_path, class: "links border"%>

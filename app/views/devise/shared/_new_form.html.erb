@@ -1,0 +1,49 @@
+<div class="field row">
+  <div class="col-sm-12">
+    <div class="form-group">
+      <div class="input-group">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder:"Email", class: "form-control" %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="field row">
+  <div class="col-sm-12">
+    <div class="form-group">
+      <div class="input-group">
+        <%= f.text_field :name, placeholder:"Name", class: "form-control" %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="field row ">
+  <div class="col-sm-12">
+    <div class="form-group">
+      <div class="input-group">
+        <% if @minimum_password_length %>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password",placeholder:"Password", class: "form-control" %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="field row">
+  <div class="col-sm-12">
+    <div class="form-group">
+      <div class="input-group">
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder:"Confirm Password", class: "form-control" %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="actions">
+  <div class="field row">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <div class="input-group">
+          <%= f.submit "Sign up", class: "form-control submit-button" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

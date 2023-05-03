@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
-<h1><strong>Tasks</strong></h1>
-<h5> <strong> Namaskar 🙏🏻🙏🏻🙏🏻🙏 Mr.  <%= current_user.name%></strong></h5>
+<h1 class = "container"><strong>Tasks</strong></h1>
+<h5 class = "container"> <strong> Namaskar 🙏🏻🙏🏻🙏🏻🙏 Mr.  <%= current_user.name%></strong></h5>
 <div id="tasks">
   <% @tasks.each do |task| %>
     <%if task.completed %>
@@ -16,4 +16,6 @@
     <%end%>
   <% end %>
 </div>
-<%= link_to "Add task", new_task_path, class: "links border"%>
+<div class = "d-flex justify-content-center">
+  <%= link_to "Add task", new_task_path, class: "btn btn-primary nav-font"%>
+</div>

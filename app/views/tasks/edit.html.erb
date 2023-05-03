@@ -1,7 +1,7 @@
-<h1>Editing task</h1>
+<h1><strong>EDIT TASK</strong></h1>
 <%= render "form", task: @task %>
 <br>
-<div>
-  <%= link_to "Show this task", @task, class: "links" %> |
-  <%= link_to "Back to tasks", tasks_path, class:"links" %>
+<div class = "d-flex justify-content-center">
+  <%= link_to "Show this task", @task, class: "btn btn-secondary" %>  &nbsp &nbsp
+  <%= link_to "Back to tasks", tasks_path, class: "btn btn-secondary" %>
 </div>

@@ -25,17 +25,6 @@
   box-shadow: rgba(9, 30, 66, 0.31) 0px 0px 1px 0px,
     rgba(9, 30, 66, 0.25) 0px 1px 1px 0px;
 }
-.links {
-  color: black;
-  text-decoration: antiquewhite;
-}
-.border {
-  border: 5px;
-  border-radius: 5px;
-  border-color: beige;
-  padding: 0.25rem;
-}
-
 .form-control{
   margin-bottom: 2rem;
 }
@@ -45,4 +34,16 @@
 }
 .drop-right{
   right:0px;
+}
+
+.height{
+  height: 5rem;
+}
+.logo{
+  font-size: 2.5rem;
+}
+
+.nav-font{
+  font-size: 1.2rem;
+  color: black;
 }

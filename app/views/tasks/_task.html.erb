@@ -1,8 +1,9 @@
 <div id="<%= dom_id task %>", class = "each-task same-line">
   <div>
     <strong><%= task.title %></strong>
-    <p class = "border">
-      <%= link_to "Update Task", task, class: "links" %>
+    <p>
+      <br>
+      <%= link_to "Update Task", task, class: "btn btn-light" %>
     </p>
   </div>
   <div>
@@ -12,15 +13,16 @@
         <label class="form-check-label" >
           Completed
         </label>
-        <%= button_to "Done and Remove", task, method: :delete, class: "links border", id: "auto-click"%>
+        <%= button_to "Done", task, method: :delete, class: "btn btn-secondory", id: "auto-click"%>
       </div>
     <%else%>
       <div class="form-check">
-        <input class="form-check-input check-box" type="checkbox" value= "" id="flexCheckIndeterminate" >
+        <%# <input class="form-check-input check-box" type="checkbox" value= "" id="flexCheckIndeterminate" >
         <label class="form-check-label" >
           Completed
-        </label>
-        <%= button_to "Done and Remove", task, method: :delete, class: "links border", id: "auto-click" %>
+        </label> %>
+        <br/>
+        <%= button_to "Done", task, method: :delete, class: "btn btn-success", id: "auto-click" %>
       </div>
     <%end%>
   </div>

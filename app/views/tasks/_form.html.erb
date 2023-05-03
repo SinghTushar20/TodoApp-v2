@@ -9,15 +9,35 @@
       </ul>
     </div>
   <% end %>
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+  <div class="container mt-5 mb-5 d-flex justify-content-center">
+    <div class="card px-1 py-4" style="width: 24rem;">
+      <div class="card-body">
+        <h2 class = "card-title"><strong> DOs </strong></h2>
+        <br/>
+        <div class="field row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <div class="input-group">
+                <%= form.text_field :title, class: "form-control", placeholder: "Title"%>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <div class="input-group">
+                <%= form.label :completed, style: "display: block" %>
+              </div>
+              <div><%= form.check_box :completed %></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <%= form.submit "Add", class: "btn btn-primary form-control"%>
+      </div>
+    </div>
   </div>
-  <div>
-    <%= form.label :completed, style: "display: block" %>
-    <%= form.check_box :completed %>
-  </div>
-  <div>
-    <%= form.submit %>
-  </div>
+</div>
 <% end %>
